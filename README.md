@@ -1,36 +1,27 @@
-# angular2-now-playing - Example Angular 2 Application
+# MovieApp
 
-This repository contains an example Angular 2 application that displays movies currently at the theater. It was built solely as an example of using Angular 2 and is not intended to be used beyond the learning experience. 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
-The project utilizes the [TMDb API](https://www.themoviedb.org/).
+## Development server
 
-![Screenshot](screenshot.png)
-<sup>Note: the image shown above is not owned by Keyhole, and all copyrights belong to their respective owners. The image used here is only for education and is not intended to generate income.</sup>
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-While this application is an excellent standalone learning resource, it was also used as a live coding example in the Keyhole Software Breakfast Boost Series "Angular 2 In Action." See below for more information.
+## Code scaffolding
 
-### Comparing to React
-A similar now-playing app has been developed using React. See what makes this app different by checking it out [here](https://github.com/in-the-keyhole/khs-react-course). 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Comparing to Angular 1
-A similar now-playing app has been developed using Angular 1. See what makes this app different by checking it out [here](https://github.com/in-the-keyhole/angular-now-playing). 
+## Build
 
-## Getting Started
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Prerequisites: You must have Node/npm installed.
+## Running unit tests
 
-1. npm install
-2. npm start
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-This will run the TypeScript compiler in watch mode, and lite-server with Browsersync enabled.  It should automatically launch your default web browser on http://localhost:3000.
+## Running end-to-end tests
 
-### More Information On "Angular 2 In Action!"
-In this educational talk, Keyhole Principal Consultants present a live demonstration of Angular 2 in action.
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-AngularJS is one of the most popular JavaScript frameworks available for creating web applications. The switch from Angular 1 and adoption of Angular 2 has been a source of anxiety for members of the enterprise. That enterprise concern is what we seek to alleviate in this talk. 
+## Further help
 
-Throughout the talk, Principal Consultants build an example Angular 2 application applicable to enterprise use. They will point out unique features and approaches the Angular 2 framework introduces, with an eye for potential pitfalls. The presentation will show how it contrasts from Angular 1 and other comparable JavaScript frameworks, in addition to a contrast from existing development patterns and techniques.
-
-All public Keyhole Software educational events can be found on the [Keyhole Eventbrite page](http://www.eventbrite.com/o/keyhole-software-2942446951).
-
-This content is from [Keyhole Software](https://keyholesoftware.com). We love knowledge transfer!
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
