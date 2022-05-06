@@ -1,22 +1,24 @@
-import {Http} from "@angular/http";
+import { HttpClient } from "@angular/common/http";
 import {Injectable} from "@angular/core";
 import {Movie} from "./movie.model";
-import {Observable} from "rxjs/Rx";
-import "rxjs/add/operator/map";
 
 @Injectable()
 export class MovieService {
 
-    constructor(private http:Http) {
+    constructor(private http:HttpClient) {
     }
 
-    nowPlaying():Observable<Movie[]> {
-        return this.http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=cf86200f49581725c527db61a5b017c6')
-            .map(response => response.json().results || [])
+    nowPlaying() {
+        const data: any = this.http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=cf86200f49581725c527db61a5b017c6')
+        return data.map(response => response.json().results || [])
+        // return this.http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=cf86200f49581725c527db61a5b017c6')
+        //     .map(response => response.json().results || [])
     }
 
-    movie(id:number):Observable<Movie> {
-        return this.http.get('https://api.themoviedb.org/3/movie/' + id + '?api_key=cf86200f49581725c527db61a5b017c6')
-            .map(response => response.json() || {})
+    movie(id:number) {
+        const data: any = this.http.get('https://api.themoviedb.org/3/movie/' + id + '?api_key=cf86200f49581725c527db61a5b017c6')
+        return data.map(response => response.json().results || [])
+        // return this.http.get('https://api.themoviedb.org/3/movie/' + id + '?api_key=cf86200f49581725c527db61a5b017c6')
+        //     .map(response => response.json() || {})
     }
 }

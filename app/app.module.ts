@@ -1,7 +1,7 @@
 import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {routing, appRoutingProviders} from './app.routes';
-import {HttpModule} from "@angular/http";
+import { HttpClient } from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 
 import {AppComponent}  from './app.component';
@@ -11,7 +11,7 @@ import {MoviesComponent} from "./movies.component";
 @NgModule({
     imports: [
         BrowserModule,
-        HttpModule,
+        HttpClient ,
         FormsModule,
         routing
     ],
